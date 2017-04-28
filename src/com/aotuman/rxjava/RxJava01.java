@@ -84,7 +84,7 @@ public class RxJava01 {
 	
 	public static void test3(){
 		// subscribe() 支持不完整定义的回调
-		// 自动创建 ActionSubscriber(继承)，并使用 onNextAction、 onErrorAction 和 onCompletedAction 
+		// 自动创建 ActionSubscriber(继承Subscriber)，并使用 onNextAction、 onErrorAction 和 onCompletedAction 
 		// 分别定义 onNext()、 onError() 和 onComplete
 		mObservable.subscribe(onNextAction);
 		mObservable.subscribe(onNextAction, onErrorAction);
